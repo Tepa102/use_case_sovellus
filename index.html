@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Äänestyssovellus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navigointipalkki -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Etusivu <span class="sr-only"></span></a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="kayttaja.html">Käyttäjä</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="yllapitaja.html">Ylläpitäjä</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aanestykset.html">Äänestykset</a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="tausta">
+    <h1><b>Äänestyssovellus</h1>
+    <p>Käyttäjätunnuksen luomisen jälkeen kirjaudu sisään. Näet äänestykset ja äänestyksien tilanteen.<br> Luo
+      käyttäjätunnus ja kirjaudu.</p>
+  </div>
+
+  <div class="lomake-container">
+    <!-- Käyttäjän luontilomake -->
+    <form onsubmit="createAccount('user'); return false;">
+      <label for="userUsername">Luo käyttäjätunnus:</label>
+      <input type="text" id="userUsername" required>
+      <label for="userPassword">Luo salasana:</label>
+      <input type="password" id="userPassword" required>
+      <button type="submit">Luo käyttäjätunnus</button>
+    </form>
+
+    <!-- Ylläpitäjän ja käyttäjän kirjautumislomake -->
+    <h2><b>Kirjaudu</b></h2>
+    <form onsubmit="login('admin'); return false;">
+      <label for="adminLoginUsername">Käyttäjätunnus:</label>
+      <input type="text" id="adminLoginUsername" required>
+      <label for="adminLoginPassword">Salasana:</label>
+      <input type="password" id="adminLoginPassword" required>
+      <button type="button" onclick="login('admin')">Kirjaudu</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <script src="users.js"></script>
+  <script src="polls.js"></script>
+  <script src="authentication.js"></script>
+  <script src="ui.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

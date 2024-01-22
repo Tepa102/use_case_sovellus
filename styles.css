@@ -1,0 +1,29 @@
+body {
+    background-image: url("tausta.png");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.tausta {
+    background-color: rgb(127, 178, 255);
+    padding: 20px;
+    margin: 50px;
+}
+
+.lomake-container {
+    background-color:rgb(127, 178, 255);
+    padding: 20px;
+    margin: 50px;
+}
+
+.container{
+    padding: 50px;
+    background-color: rgb(127, 178, 255);
+}
+
+#adminPolls {
+    border: 4px solid #000;  /* Musta viiva, voit vaihtaa väriä tarpeidesi mukaan */
+    padding: 10px;  /* Lisää hieman tyhjää tilaa viivan ja äänestyksen sisälle */
+}
