@@ -55,7 +55,7 @@ function updatePollsForUsers() {
   }
 
   userPollsContainer.innerHTML = '';
-  pollListContainer.innerHTML = '';
+ 
 
   polls.forEach((poll, pollIndex) => {
     const pollDiv = document.createElement('div');
@@ -102,6 +102,12 @@ function updatePollsForUsers() {
       </form>`;
 
     userPollsContainer.appendChild(createPollDiv);
+  }
+  // Näytä viesti, kun äänestyksiä ei ole
+  if (polls.length === 0) {
+    const noPollsMessage = document.createElement('p');
+    noPollsMessage.textContent = 'Ei äänestyksiä saatavilla.';
+    userPollsContainer.appendChild(noPollsMessage);
   }
 }
 
