@@ -143,7 +143,10 @@ function updatePollsForAdmin() {
     adminPollsContainer.appendChild(pollDiv);
   });
 }
-  
+function updatePollList() {
+  // Tee tarvittavat päivitykset äänestyslistaukseen
+  console.log('updatePollList called');
+}
 // Äänestyksen poisto
 function deletePoll(pollIndex) {
   const confirmation = confirm('Haluatko varmasti poistaa tämän äänestyksen?');
