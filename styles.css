@@ -27,3 +27,14 @@ body {
     border: 4px solid #000;  /* Musta viiva, voit vaihtaa väriä tarpeidesi mukaan */
     padding: 10px;  /* Lisää hieman tyhjää tilaa viivan ja äänestyksen sisälle */
 }
+
+#userPolls {
+    border: 4px solid #000;  /* Musta viiva, voit vaihtaa väriä tarpeidesi mukaan */
+    padding: 10px;  /* Lisää hieman tyhjää tilaa viivan ja äänestyksen sisälle */
+}
+
+#pollResults {
+    border: 4px solid #000;  /* Musta viiva, voit vaihtaa väriä tarpeidesi mukaan */
+    padding: 10px;  /* Lisää hieman tyhjää tilaa viivan ja äänestyksen sisälle */
+
+}
